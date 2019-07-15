@@ -9,7 +9,7 @@ class TestAddition(unittest.TestCase):
     def setUp(self):
         chrome_options = Options()
         chrome_options.add_argument("--headless")
-        self.driver = webdriver.Chrome(executable_path='/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/selenium/webdriver')
+        self.driver = webdriver.Chrome()
         url = 'http://pythonscraping.com/pages/javascript/draggableDemo.html'
         self.driver.get(url)
 
